@@ -1,2 +1,23 @@
-class Program
-{
+using System;
+ 
+class SecondLargest {
+ 
+    static void printSecondlargest(int[] arr)
+    {
+       Array.Sort(arr);
+       Array.Reverse(arr);
+       for(int i=1; i<arr.length; i++){
+       if(arr[i] != arr[0]){
+       second=arr[i];
+       break;
+       }
+       }
+
+    }
+
+    public static void Main()
+    {
+        int[] arr = new int[] { 12, 13, 1, 10, 34, 1 };
+        printSecondlargest(arr);
+    }
+    }
