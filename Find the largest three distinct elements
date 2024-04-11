@@ -1,0 +1,19 @@
+using System;
+ 
+class ThreeLargest {
+ 
+    static void print3largest(int[] arr, int arr_size)
+    {
+       Array.Sort(arr);
+       Array.Reverse(arr);
+
+       Console.WriteLine("Three largest elements are " + arr[0] + " " + arr[1] + " " + arr[2]);
+    }
+
+    public static void Main()
+    {
+        int[] arr = new int[] { 12, 13, 1, 10, 34, 1 };
+        int n = arr.Length;
+        print3largest(arr, n);
+    }
+    }
