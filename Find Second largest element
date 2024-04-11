@@ -12,7 +12,7 @@ class SecondLargest {
        break;
        }
        }
-
+Console.WriteLine("Second largest element is " + {second});
     }
 
     public static void Main()
